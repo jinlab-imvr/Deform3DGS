@@ -15,7 +15,7 @@ Official code implementation for [Deform3DGS](), a Gaussian Splatting based fram
 Tested with an Ubuntu workstation  , 4090GPU.
 
 ```bash
-git clone https://github.com/lala-sean/Deform3DGS.git
+git clone https://github.com/jinlab-imvr/Deform3DGS.git
 cd Deform3DGS
 conda create -n Deform3DGS python=3.7 
 conda activate Deform3DGS
