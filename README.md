@@ -2,7 +2,7 @@
 
 Official code implementation for [Deform3DGS](), a Gaussian Splatting based framework for surgical scene reconstruction.
 
-<!--### [Project Page](https://yifliu3.github.io/EndoGaussian/) -->
+<!--### [Project Page]() -->
 > [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting]() \
 > Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin \
 > MICCAI2024, **Early Accept**
@@ -15,7 +15,7 @@ Official code implementation for [Deform3DGS](), a Gaussian Splatting based fram
 Tested with an Ubuntu workstation  , 4090GPU.
 
 ```bash
-git clone 
+git clone https://github.com/lala-sean/Deform3DGS.git
 cd Deform3DGS
 conda create -n Deform3DGS python=3.7 
 conda activate Deform3DGS
