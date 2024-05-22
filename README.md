@@ -28,9 +28,9 @@ pip install -e submodules/simple-knn
 ## Datasets
 We use 6 clips from [EndoNeRF](https://github.com/med-air/EndoNeRF) and 3 clips manually extracted from [StereoMIS](https://zenodo.org/records/7727692) to verify our method. 
 
-To use the two available examples in [EndoNeRF](https://github.com/med-air/EndoNeRF) dataset. Please download the data via [this link]() and organize the data according to the [guideline]().
+To use the two available examples in [EndoNeRF](https://github.com/med-air/EndoNeRF) dataset. Please download the data via [this link](https://forms.gle/1VAqDJTEgZduD6157) and organize the data according to the [guideline](https://github.com/med-air/EndoNeRF.git).
 
-To use the [StereoMIS](https://zenodo.org/records/7727692) dataset, please follow this [github repo]() to preprocess the dataset and organize the depth, masks, images, intrinsic and extrinsic parameters in the same format as [EndoNeRF](https://github.com/med-air/EndoNeRF). In our implementation, we used [RAFT]() to estimate the stereo depth for [StereoMIS](https://zenodo.org/records/7727692) clips.
+To use the [StereoMIS](https://zenodo.org/records/7727692) dataset, please follow this [github repo](https://github.com/aimi-lab/robust-pose-estimatot.git) to preprocess the dataset and organize the depth, masks, images, intrinsic and extrinsic parameters in the same format as [EndoNeRF](https://github.com/med-air/EndoNeRF). In our implementation, we used [RAFT]() to estimate the stereo depth for [StereoMIS](https://zenodo.org/records/7727692) clips.
 
 The data structure is as follows:
 ```
