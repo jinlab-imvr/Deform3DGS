@@ -8,7 +8,7 @@ Official code implementation for [Deform3DGS](), a Gaussian Splatting based fram
 > MICCAI2024, **Early Accept**
 
 ## Pipeline
-![](assets/overview.jgp)
+![](assets/overview.jpg)
 
 
 ## Environment setup
