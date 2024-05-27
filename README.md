@@ -1,6 +1,6 @@
 # Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting
 
-Official code implementation for [Deform3DGS](), a Gaussian Splatting based framework for surgical scene reconstruction.
+Official code implementation for [Deform3DGS](), a Gaussian Splatting based framework for fast surgical scene reconstruction.
 
 <!--### [Project Page]() -->
 > [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting]() \
@@ -30,7 +30,7 @@ We use 6 clips from [EndoNeRF](https://github.com/med-air/EndoNeRF) and 3 clips 
 
 To use the two available examples in [EndoNeRF](https://github.com/med-air/EndoNeRF) dataset. Please download the data via [this link](https://forms.gle/1VAqDJTEgZduD6157) and organize the data according to the [guideline](https://github.com/med-air/EndoNeRF.git).
 
-To use the [StereoMIS](https://zenodo.org/records/7727692) dataset, please follow this [github repo](https://github.com/aimi-lab/robust-pose-estimatot.git) to preprocess the dataset and organize the depth, masks, images, intrinsic and extrinsic parameters in the same format as [EndoNeRF](https://github.com/med-air/EndoNeRF). In our implementation, we used [RAFT]() to estimate the stereo depth for [StereoMIS](https://zenodo.org/records/7727692) clips.
+To use the [StereoMIS](https://zenodo.org/records/7727692) dataset, please follow this [github repo](https://github.com/aimi-lab/robust-pose-estimator.git) to preprocess the dataset and organize the depth, masks, images, intrinsic and extrinsic parameters in the same format as [EndoNeRF](https://github.com/med-air/EndoNeRF). In our implementation, we used [RAFT]() to estimate the stereo depth for [StereoMIS](https://zenodo.org/records/7727692) clips.
 
 The data structure is as follows:
 ```

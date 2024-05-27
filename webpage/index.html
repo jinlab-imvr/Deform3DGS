@@ -1,0 +1,157 @@
+
+<script src="https://www.google.com/jsapi" type="f294e2f4946ae6e68fdccadd-text/javascript"></script>
+<script type="f294e2f4946ae6e68fdccadd-text/javascript">google.load("jquery", "1.3.2");</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<title>Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting</title>
+<meta property="og:title" content="Deform3DGS">
+<meta property="og:description" content="Project Page for Deform3DGS. MICCAI 2024 paper: 'Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting'">
+<meta name="description" content="Project Page for Deform3DGS. MICCAI 2024 paper: 'Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting'">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ5ZZP2G87" type="f294e2f4946ae6e68fdccadd-text/javascript"></script>
+<script type="f294e2f4946ae6e68fdccadd-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TQ5ZZP2G87');
+</script>
+</head>
+<body>
+<br>
+<div class="container">
+<div class="title">
+	Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting
+</div>
+</div>
+<br>
+<div class="container">
+<div class="author">Shuojue Yang</a><sup>&nbsp;1</sup>
+</div>
+<div class="author">Qian Li<sup>&nbsp;1</sup>
+</div>
+<div class="author">Daiyun Shen<sup>&nbsp;2</sup>
+</div>
+<div class="author">Bingchen Gong<sup>&nbsp;3</sup>
+</div>
+<div class="author">Qi Dou<sup>&nbsp;3</sup>
+</div>
+<div class="author">Yueming Jin<sup>&nbsp;1</sup>
+</div>
+<!--<div class="author"><a href="https://jhugestar.github.io/">Hanbyul Joo</a><sup>&nbsp;2</sup>
+</div>
+<div class="author"><a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a><sup>&nbsp;1,3</sup>
+</div>
+<div class="author"><a href="https://people.eecs.berkeley.edu/~malik/">Jitendra
+Malik</a><sup>&nbsp;2,4</sup></div>
+<div class="author"><a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo
+Kanazawa</a><sup>&nbsp;4</sup></div>-->
+</div>
+<br>
+<div class="container">
+<div class="affiliation"><sup>1&nbsp;</sup>National University of Singapore</div>
+<div class="affiliation"><sup>2&nbsp;</sup>Tsinghua University</div>
+<div class="affiliation"><sup>3&nbsp;</sup>Chinese University of Hong Kong</div>
+</div>
+<br>
+<div class="container">
+<div class="links">In <a href="https://conferences.miccai.org/2024/">MICCAI 2024(Early Accepth)</a></div>
+</div>
+<br>
+<div class="container">
+<div class="links"><a href="">[Paper]</a></div>
+<div class="links"><a href="https://github.com/jinlab-imvr/Deform3DGS">[Code]</a>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="teaser">
+<a href="resources/demo.mp4" target="_blank" style="cursor:zoom-in;">
+<video autoplay loop muted playsinline width="100%">
+<source src="resources/demo.mp4" type="video/mp4">
+</video>
+</a>
+<i>
+We present Deform3DGS, a Gaussian Splatting based framework for fast surgical scene reconstruction.
+From endoscopic videos, we reconstruct photo-realistic 3D assets for deformable tissues within minimum
+training time. Compared with previous SOTA in fast reconstruction, our method has 
+remarkble superiority in both efficiency and reconstruction quality, indicating great potential in intraoperative use. 
+</i>
+</div>
+</div>
+<br><br>
+<div class="container">
+<h1>Abstract</h1>
+<p>
+Tissue deformation poses a key challenge for accurate surgical scene reconstruction. Despite yielding high reconstruction quality, existing methods suffer from slow rendering speeds and long training times, limiting their intraoperative applicability. Motivated by recent progress in 3D Gaussian Splatting, an emerging technology in real-time 3D rendering, this work presents a novel fast reconstruction framework, termed \emph{\textbf{Deform3DGS}}, for deformable tissues during endoscopic surgery. Specifically, we introduce 3D GS into surgical scenes by integrating a point cloud initialization to improve reconstruction. Furthermore, we propose a novel flexible deformation modeling scheme (FDM) to learn tissue deformation dynamics at the level of individual Gaussians. Our FDM can model the surface deformation with efficient representations, allowing for real-time rendering performance. More importantly, FDM significantly accelerates surgical scene reconstruction, demonstrating considerable clinical values, particularly in intraoperative settings where time efficiency is crucial. Experiments on DaVinci robotic surgery videos indicate the efficacy of our approach, showcasing superior reconstruction fidelity PSNR: (37.90) and rendering speed (338.8 FPS) while substantially reducing training time to only 1 minute/scene.
+</p>
+<br><br>
+<hr>
+<br>
+<h1>Paper</h1>
+
+<div class="paper-info">
+<a href=""></a>
+<h4>Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting</h4>
+<h5>
+Shuojue&nbsp;Yang, Qian&nbsp;Li , Daiyun&nbsp;Shen,
+Bingchen&nbsp;Gong, Qi&nbsp;Dou, and Yueming&nbsp;Jin
+</h5>
+<pre><code>@InProceedings{yang2024deform3dgs,
+    title = {Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting},
+    author = {Yang, Shuojue and Li, Qian and Gong, Bingchen and Dou, Qi and Jin, Yueming},
+    booktitle = {Arxiv},
+    year = {2024},
+}</code></pre>
+</div>
+<br>
+<hr>
+<br>
+</div>
+<h1>Method</h1>
+<img style="width:60%;" src="assets/overview.jpg" alt="Model overview figure" />
+<p>
+	During the training phase, our framework initializes the endoscopic scene with a Gaussian point
+	cloud using the MAPF scheme. The following is the FDM that models deformed tissues by learning 
+	the time-dependent changes for each Gaussian point. Next, the renderingis performed to obtain 
+	the colored image and depth of the deformed Gaussian point cloud given the camera viewpoint. 
+	Finally, the rendered image and depth are supervised by corresponding ground-truth (GT) image 
+	and stereo depth to optimize the framework. During rendering (testing), given a query time and 
+	camera viewpoint, FDM deforms the learned Gaussian point cloud and the view of the deformed Gaussians 
+	is rendered.
+</p>
+<br>
+<hr>
+<br>
+<h1> Comparison and Results</h1>
+<img style="width:60%;" src="assets/results.jpg" alt="results figure" />
+<p>
+	Our method outperforms previous NeRF-based solutions in terms of both reconstruction quality and efficiency.
+</p>
+<div class="container">
+<div class="video-container">
+	<video width="320" height="533" controls autoplay muted>
+		<source src="webpage-template/resources/output_video_traction.mp4" type="video/mp4">
+	<video width="320" height="533" controls autoplay muted>
+		<source src="webpage-template/resources/output_video_cutting.mp4" type="video/mp4">
+	<video width="320" height="533" controls autoplay muted>
+		<source src="webpage-template/resources/output_video_pushing.mp4" type="video/mp4">
+<p>
+	Our method can handle various surgical scenarios.
+</p>
+	
+</video>
+</div>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f294e2f4946ae6e68fdccadd-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587" integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA==" data-cf-beacon='{"rayId":"88a4caefdfa13d83","r":1,"version":"2024.4.1","token":"17be1ab583d44d09b6e99354e7fcad48"}' crossorigin="anonymous"></script>
+</body>
+</html>
