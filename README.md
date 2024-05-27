@@ -8,7 +8,8 @@ Official code implementation for [Deform3DGS](), a Gaussian Splatting based fram
 > MICCAI2024, **Early Accept**
 
 ## Demo
-[Training time v.s. LerPlane](assets/demo.mp4)
+
+https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/d58deb50-36ce-4cde-9e65-e3ce8bb851dc
 
 Compared to previous SOTA method in fast reconstruction, our method reduces the training time to **1 minute** for each clip in EndoNeRF dataset, demonstrating remarkable superiority in efficiency.
 
