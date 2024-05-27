@@ -8,4 +8,4 @@ To use this template, clone the repo:
 git clone https://github.com/richzhang/webpage-template.git
 ```
 
-Copy the contents into a `gh-pages` branch of a GitHub repo. That will automatically make a webpage under address [jinlab-imvr.github.io/Deform3DGS](jinlab-imvr.github.io/Deform3DGS).
+Copy the contents into a `gh-pages` branch of a GitHub repo. That will automatically make a webpage under address [jinlab-imvr.github.io/Deform3DGS](https://jinlab-imvr.github.io/Deform3DGS).
