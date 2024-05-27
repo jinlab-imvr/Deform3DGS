@@ -7,7 +7,13 @@ Official code implementation for [Deform3DGS](), a Gaussian Splatting based fram
 > Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin \
 > MICCAI2024, **Early Accept**
 
-## Pipeline
+## Demo
+[Training time v.s. LerPlane](assets/demo.mp4)
+
+Compared to previous SOTA method in fast reconstruction, our method reduces the training time to **1 minute** for each clip in EndoNeRF dataset, demonstrating remarkable superiority in efficiency.
+
+
+## Abstract
 ![](assets/overview.jpg)
 
 
