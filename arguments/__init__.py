@@ -47,8 +47,7 @@ class ParamGroup:
 class ModelParams(ParamGroup): 
     def __init__(self, parser, sentinel=False):
         self.sh_degree = 3
-        self._source_path = "/mnt/iMVR/shuojue/data/endonerf_full_datasets/traction"
-        # self._source_path = "/mnt/iMVR/shuojue/data/StereoMIS/stereo_P2_1_respiration"
+        self._source_path = ""
         self._model_path = ""
         self._images = "images"
         self._resolution = -1
