@@ -69,7 +69,7 @@ def render_set(model_path, name, iteration, views, gaussians, pipeline, backgrou
                 if idx == 0 and i == 0:
                     time1 = time()
                 stage = 'coarse' if no_fine else 'fine'
-                rendering = render(view, gaussians, pipeline, background, stage=stage)
+                rendering = render(view, gaussians, pipeline, background)
         time2=time()
         print("FPS:",(len(views)-1)*test_times/(time2-time1))
     
