@@ -1,9 +1,9 @@
 # Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting
 
-Official code implementation for [Deform3DGS](), a Gaussian Splatting based framework for surgical scene reconstruction.
+Official code implementation for [Deform3DGS](https://arxiv.org/abs/2405.17835), a Gaussian Splatting based framework for surgical scene reconstruction.
 
 <!--### [Project Page]() -->
-> [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting]() \
+> [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting](https://arxiv.org/abs/2405.17835) \
 > Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin \
 > MICCAI2024, **Early Accept**
 
@@ -93,5 +93,13 @@ Huge thanks to [EndoGaussian](https://github.com/yifliu3/EndoGaussian/tree/maste
 If you find this code useful for your research, please use the following BibTeX entries:
 
 ```
+@misc{yang2024deform3dgs,
+      title={Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting}, 
+      author={Shuojue Yang and Qian Li and Daiyun Shen and Bingchen Gong and Qi Dou and Yueming Jin},
+      year={2024},
+      eprint={2405.17835},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 
 ```
