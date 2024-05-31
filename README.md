@@ -13,7 +13,11 @@ https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/d58deb50-36ce-4cde-9e
 
 Compared to previous SOTA method in fast reconstruction, our method reduces the training time to **1 minute** for each clip in EndoNeRF dataset, demonstrating remarkable superiority in efficiency.
 
-
+<p align="center">
+  <img src="assets/demo_traction.gif" width="200" />
+  <img src="assets/demo_cutting.gif" width="200" />
+  <img src="assets/demo_pushing.gif" width="200" />
+</p>
 ## Pipeline
 <!--![](assets/overview.png)-->
 <p align="center">
