@@ -7,17 +7,20 @@ Official code implementation for [Deform3DGS](https://arxiv.org/abs/2405.17835),
 > Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin \
 > MICCAI2024, **Early Accept**
 
-## Demo: reconstruction within 1 minute
+## Demo
+### Reconstruction within 1 minute
 
 https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/d58deb50-36ce-4cde-9e65-e3ce8bb851dc
 
 Compared to previous SOTA method in fast reconstruction, our method reduces the training time to **1 minute** for each clip in EndoNeRF dataset, demonstrating remarkable superiority in efficiency.
 
+### Reconstruction of various scenes
 <p align="center">
   <img src="assets/demo_traction.gif" width="200" />
   <img src="assets/demo_cutting.gif" width="200" />
   <img src="assets/demo_pushing.gif" width="200" />
 </p>
+
 ## Pipeline
 <!--![](assets/overview.png)-->
 <p align="center">
