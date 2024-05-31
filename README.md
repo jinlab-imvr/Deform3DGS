@@ -29,10 +29,10 @@ Compared to previous SOTA method in fast reconstruction, our method reduces the 
 
 **Deform3DGS** is composed of (a) Point cloud initialization, (b) Flexible Deformation Modeling, and (c) 3D Gaussian Splatting. Experiments on DaVinci robotic surgery videos indicate the efficacy of our approach, showcasing superior reconstruction fidelity PSNR: (37.90) and rendering speed (338.8 FPS) while substantially reducing training time to only 1 minute/scene.
 
-## Visual Results
+<!--## Visual Results
 <p align="center">
   <img src="assets/visual_results.png" width="700" />
-</p>
+</p>-->
 
 ## Environment setup
 Tested with an Ubuntu workstation  , 4090GPU.
