@@ -16,9 +16,7 @@ Compared to previous SOTA method in fast reconstruction, our method reduces the 
 
 ### Reconstruction of various scenes
 <p align="center">
-  <img src="assets/demo_traction.gif" width="200" />
-  <img src="assets/demo_cutting.gif" width="200" />
-  <img src="assets/demo_pushing.gif" width="200" />
+  <img src="assets/case_demo.gif" width="600" />
 </p>
 
 ## Pipeline
@@ -35,7 +33,7 @@ Compared to previous SOTA method in fast reconstruction, our method reduces the 
 </p>-->
 
 ## Environment setup
-Tested with an Ubuntu workstation  , 4090GPU.
+Tested with NVIDIA RTX A5000 GPUs.
 
 ```bash
 git clone https://github.com/jinlab-imvr/Deform3DGS.git
