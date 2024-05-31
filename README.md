@@ -17,6 +17,10 @@ Compared to previous SOTA method in fast reconstruction, our method reduces the 
 ### Reconstruction of various scenes
 
 
+https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/633777fa-9110-4823-b6e5-f5d338e72551
+
+
+
 
 ## Pipeline
 <!--![](assets/overview.png)-->
