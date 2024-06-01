@@ -10,7 +10,11 @@ Official code implementation for [Deform3DGS](https://arxiv.org/abs/2405.17835),
 ## Demo
 ### Reconstruction within 1 minute
 
-https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/d58deb50-36ce-4cde-9e65-e3ce8bb851dc
+<!--https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/d58deb50-36ce-4cde-9e65-e3ce8bb851dc-->
+
+
+https://github.com/jinlab-imvr/Deform3DGS/assets/157268160/7609bfb6-9130-488f-b893-85cc82d60d63
+
 
 Compared to previous SOTA method in fast reconstruction, our method reduces the training time to **1 minute** for each clip in EndoNeRF dataset, demonstrating remarkable superiority in efficiency.
 
