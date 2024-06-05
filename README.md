@@ -127,4 +127,4 @@ If you find this code useful for your research, please use the following BibTeX 
 
 ```
 ### Questions
-For further question about the code or paper, welcome to create an issue or contact 's.yang@u.nus.edu'/'ymjin@nus.edu.sg'
+For further question about the code or paper, welcome to create an issue, or contact 's.yang@u.nus.edu' or 'ymjin@nus.edu.sg'
