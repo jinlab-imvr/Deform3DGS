@@ -88,7 +88,7 @@ python train.py -s data/endonerf_full_datasets/pulling_soft_tissues --expname en
 ```
 
 ## Testing
-We use the same testing pipeline with [EndoGaussian](https://github.com/yifliu3/EndoGaussian/tree/master) to perform rendering and evaluation seperately.
+For testing, we perform rendering and evaluation separately.
 
 ### Rendering
 To run the following example command to render the images:
@@ -126,3 +126,5 @@ If you find this code useful for your research, please use the following BibTeX 
 }
 
 ```
+### Questions
+For further question about the code or paper, welcome to create an issue or contact 's.yang@u.nus.edu'/'ymjin@nus.edu.sg'
