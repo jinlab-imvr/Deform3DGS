@@ -65,7 +65,7 @@ To use the two available examples in [EndoNeRF](https://github.com/med-air/EndoN
 
 To use the [StereoMIS](https://zenodo.org/records/7727692) dataset, please follow this [github repo](https://github.com/aimi-lab/robust-pose-estimatot.git) to preprocess the dataset and organize the depth, masks, images, intrinsic and extrinsic parameters in the same format as [EndoNeRF](https://github.com/med-air/EndoNeRF). In our implementation, we used [RAFT](https://github.com/princeton-vl/RAFT) to estimate the stereo depth for [StereoMIS](https://zenodo.org/records/7727692) clips.
 
-A script `stereomis2endonerf.py` is provided to reformat clips extracted from the StereoMIS dataset. Of note, this script only supports settings (as EndoNeRF dataset) where the camera view is fixed.
+A script `stereomis2endonerf.py` is provided to reformat clips extracted from the StereoMIS dataset. Following EndoNeRF dataset, this script only supports fixed-view settings.
 
 The data structure is as follows:
 
