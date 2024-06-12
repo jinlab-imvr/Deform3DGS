@@ -139,7 +139,7 @@ if __name__ == "__main__":
     np.random.seed(1234)
     # Set up command line argument parser
     parser = ArgumentParser(description="parameters for dataset format conversions")
-    parser.add_argument('--data_dir', '-d', type=str, default='/mnt/iMVR/shuojue/data/StereoMIS/P3')
+    parser.add_argument('--data_dir', '-d', type=str, default='data/StereoMIS/P3')
     # Frame ID of the start and end of the sequence. Of note, only 2 arguments (start and end) are required.
     parser.add_argument('--frame_id', '-f',nargs="+", action=check_arg_limits('frame_id', 2), type=int, default=[9100, 9467])
     args = parser.parse_args()
