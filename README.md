@@ -4,8 +4,8 @@ Official code implementation for [Deform3DGS](https://arxiv.org/abs/2405.17835),
 
 <!--### [Project Page]() -->
 
-> [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting](https://arxiv.org/abs/2405.17835)
-> Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin
+> [Deform3DGS: Flexible Deformation for Fast Surgical Scene Reconstruction with Gaussian Splatting](https://arxiv.org/abs/2405.17835)\
+> Shuojue Yang, Qian Li, Daiyun Shen, Bingchen Gong, Qi Dou, Yueming Jin\
 > MICCAI2024, **Early Accept**
 
 ## Demo
