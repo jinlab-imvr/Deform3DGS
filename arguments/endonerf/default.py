@@ -16,7 +16,7 @@ OptimizationParams = dict(
 )
 
 ModelHiddenParams = dict(
-    curve_num = 17, # number of learnable basis functions
+    curve_num = 25, # number of learnable basis functions. This number was set to 17 for all the experiments in paper (https://arxiv.org/abs/2405.17835)
 
-    ch_num = 10, # channel number of deformable attributes: 10 = 3 (scale) + 3 (pos) + 4 (rot)
+    ch_num = 10, # channel number of deformable attributes: 10 = 3 (scale) + 3 (mean) + 4 (rotation)
     init_param = 0.01, )
