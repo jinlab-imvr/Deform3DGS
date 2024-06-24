@@ -125,10 +125,13 @@ class EndoNeRF_Dataset(object):
             poses_arr = np.load(os.path.join(self.root_dir, "poses_bounds.npy"))
             try:
                 poses = poses_arr[:, :-2].reshape([-1, 3, 5])  # (N_cams, 3, 5)
-            except:
+            except: 
+                # No far and near
                 poses = poses_arr.reshape([-1, 3, 5])  # (N_cams, 3, 5)
             # StereoMIS has well calibrated intrinsics
             cy, cx, focal =  poses[0, :, -1]
+            cy = 512//2
+            cx = 640//2
             focal = focal / self.downsample
             self.focal = (focal, focal)
             self.K = np.array([[focal, 0 , cx],
@@ -277,8 +280,10 @@ class EndoNeRF_Dataset(object):
     def search_pts_colors_with_motion(self, ref_pts, ref_color, ref_mask, ref_c2w):
         # calculating the motion mask
         motion_mask = self.calculate_motion_masks()
-        
-        for j in range(1, len(self.image_poses)):
+        interval = 1
+        if len(self.image_poses) > 150:
+            interval = 2
+        for j in range(1,  len(self.image_poses), interval):
             ref_mask_not = np.logical_not(ref_mask)
             ref_mask_not = np.logical_or(ref_mask_not, motion_mask[0])
             R, T = self.image_poses[j]
@@ -308,8 +313,8 @@ class EndoNeRF_Dataset(object):
             X, Y, Z = pts[..., 0], pts[..., 1], pts[..., 2]
             X, Y, Z = X[Z!=0], Y[Z!=0], Z[Z!=0]
             X_Z, Y_Z = X / Z, Y / Z
-            X_Z = (X_Z * self.focal[0] + self.img_wh[0]/2).astype(np.int32)
-            Y_Z = (Y_Z * self.focal[1] + self.img_wh[1]/2).astype(np.int32)
+            X_Z = (X_Z * self.focal[0] + self.K[0,-1]).astype(np.int32)
+            Y_Z = (Y_Z * self.focal[1] + self.K[1,-1]).astype(np.int32)
             # Out of the visibility
             out_vis_mask = ((X_Z > (self.img_wh[0]-1)) + (X_Z < 0) +\
                     (Y_Z > (self.img_wh[1]-1)) + (Y_Z < 0))>0
@@ -333,8 +338,9 @@ class EndoNeRF_Dataset(object):
             ref_color = np.concatenate((ref_color, compl_colors[sel_idxs]), axis=0)
             ref_mask = np.logical_or(ref_mask, compl_mask)
 
-        if ref_pts.shape[0] > 300000:
-            sel_idxs = np.random.choice(ref_pts.shape[0], 300000, replace=True)  
+        
+        if ref_pts.shape[0] > 600000:
+            sel_idxs = np.random.choice(ref_pts.shape[0], 500000, replace=True)  
             ref_pts = ref_pts[sel_idxs]         
             ref_color = ref_color[sel_idxs] 
         return ref_pts, ref_color
