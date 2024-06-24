@@ -281,7 +281,7 @@ class EndoNeRF_Dataset(object):
         # calculating the motion mask
         motion_mask = self.calculate_motion_masks()
         interval = 1
-        if len(self.image_poses) > 150:
+        if len(self.image_poses) > 150: # in case long sequence
             interval = 2
         for j in range(1,  len(self.image_poses), interval):
             ref_mask_not = np.logical_not(ref_mask)
