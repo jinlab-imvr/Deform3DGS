@@ -7,3 +7,5 @@ argparse
 lpips
 plyfile
 imageio-ffmpeg
+open3d
+imageio
